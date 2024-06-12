@@ -1,0 +1,607 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    background-color: #1c1414;
+    padding: 20px 0;
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative; 
+}
+nav a::after,
+nav a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px; 
+    background-color: #ffffff; 
+    transition: width 0.3s ease; 
+}
+
+nav a::before {
+    top: -3px; 
+    right: 0; 
+}
+
+nav a::after {
+    bottom: -3px; 
+    left: 0; 
+}
+
+nav a:hover::before,
+nav a:hover::after {
+    width: 100%; 
+}
+
+
+
+
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.productos li:hover {
+    border-color: #FFFFFF;
+    border-width: 3px;
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+.productos li:active {
+    border-color: #40007f;
+   
+}
+
+.productos h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
+.producto-descripcion {
+    font-size: 18px;
+}
+
+.producto-precio {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+
+
+footer {
+    text-align: center;
+    background: url(imagenes/bg.jpg);
+    padding: 40px;
+}
+
+.copyright {
+    color: #FFFFFF;
+    font-size: 13px;
+    margin: 20px;
+
+    transition: transform 0.3s ease;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+/*
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 0;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    border-color: #000000;
+    border-width: 2px;
+    border-radius: 5px;
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease; 
+    cursor: pointer;
+    margin-left: 80px;
+}
+
+.enviar:hover {
+    background: rgb(0, 0, 0);
+    transform: scale(1.2);
+    color: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+*/
+
+.input-padron {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: calc(100% - 20px); 
+    border: 1px solid #000;
+    border-radius: 5px;
+    background-color: #fff;
+    box-sizing: border-box; 
+}
+
+.input-padron:focus {
+    outline: none;
+    border-color: #000; 
+
+}
+.checkbox {
+    margin: 20px 0;
+}
+
+.checkbox input {
+    margin-right: 10px;
+}
+
+.enviar {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000; 
+    background: #ffffff; 
+    border-radius: 5px;
+    border-width: 2px;
+    cursor: pointer;
+    transition: background-color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.enviar:hover {
+    background: #000000; 
+    color: #ffffff; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+
+td,
+th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
+
+th {
+    background-color: #000;
+}
+
+td {
+    font-size: large;
+    font-weight: 900;
+    text-align: center;
+}
+
+/*Aquí inicia el CSS para nuestra home*/
+.banner {
+    width: 100%;
+}
+
+.principal {
+    padding: 3em 0;
+    background: white;
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.titulo-principal {
+    text-align: center;
+    font-size: 2em;
+    margin: 0 0 1em;
+    clear: left;
+    font-weight: bold;
+}
+
+#tituloB {
+    color: #ffffff;
+}
+
+.principal p {
+  
+    text-align: justify;
+    line-height: 1.6;
+    font-size: 17px;
+    margin: 0 0 1em;
+}
+
+.principal strong {
+    font-weight: bold;
+}
+
+.principal em {
+    font-style: italic;
+}
+
+.utensilios {
+    width: 500px;
+    float: left;
+    margin-right: 60px;
+
+
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #000000;
+
+}
+
+.utensilios:hover {
+    opacity: 0.3;
+}
+
+/* #888888 */
+.mapa {
+    padding: 3em 0;
+    background: linear-gradient(#FEFEFE, #222)
+}
+
+.mapa p {
+    margin: 0 0 2em;
+    text-align: center;
+}
+
+.mapa-contenido {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.diferenciales {
+    padding: 3em 0;
+    background: #222;
+}
+
+.contenido-diferenciales {
+    width: 900px;
+    margin: 0 auto 50px auto;
+}
+
+.lista-diferenciales {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items {
+    line-height: 1.5;
+    font-size: 21px;
+    color: #ffffff;
+    line-height: 1.9;
+}
+
+.items:before {
+    content: "★";
+    color: gold;
+}
+
+.items:first-child {
+    font-weight: bold;
+}
+
+.imagen-diferenciales {
+    margin-left: 5px;
+    width: 50%;
+    transition: 400ms;
+    box-shadow: 10px 10px 30px 15px #423535;
+}
+
+.imagen-diferenciales:hover {
+    opacity: 0.3;
+}
+
+
+.video {
+    display: block;
+    margin-top: 8em;
+    margin-bottom: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 46.6%; 
+    border-radius: 50px;
+    box-shadow: 10px 10px 40px 9px #ac9e9e;
+}
+
+
+
+
+
+
+
+
+/*
+.Linkedin {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.Linkedin {
+    color: #ffffff; /* Color blanco *
+    text-shadow: 1px 1px 2px #000000;
+    text-decoration: none;
+
+.Linkedin:hover {
+    font-size: 1.2em;
+}  */
+
+.Linkedin {
+    color: #ffffff; 
+    text-decoration: none;
+}
+
+.Linkedin:hover {
+    text-shadow: 0px 0px 50px rgba(255, 255, 255, 0.95);
+    font-size: 1.3em;
+    color: #debdff;
+}
+/*
+.formulario2 {
+    max-width: 1100px; 
+    width: 100%; 
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px; 
+}
+    */
+
+    .formulario2 {
+        max-width: 600px; /* Ancho máximo del formulario */
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #e7e4e4; /* Fondo blanco */
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.1); /* Sombra ligera */
+        font-weight: 600;
+    }
+    
+    .formulario2 label,
+    .formulario2 legend {
+        font-size: 20px;
+        color: #000; /* Texto negro */
+    }
+
+
+
+
+.tabla {
+    max-width: 1100px; /* Ancho máximo del formulario */
+    width: 30%; /* Ancho del formulario */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+#telefono,
+#correoelectronico {
+    font-size: 1.1em;
+    letter-spacing: 5px;
+}
+
+/* Prueba responsive*/
+.principal {
+    padding: 3em 5%; 
+    background: rgb(255, 255, 255);
+    max-width: 1100px; 
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width:480px) {
+    
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    } 
+    
+    .caja,
+    .principal,
+    .mapa-contenido,
+    .contenido-diferenciales,
+    .video {
+        width: auto;
+    }
+
+    .principal {
+        padding: 3em 5%;
+        width: 90%; 
+    }
+
+    .caja {
+        display: inline;
+        font-size: small;
+        width: 100%;
+    }
+
+    .nave {
+        width: 100%;
+    }
+
+    .nave ul {
+        list-style-type: none; 
+        margin: 0;
+        padding: 0;
+    }
+
+    .nave li {
+        display: inline-block;
+    }
+
+    .nave li a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 15px; 
+    }
+
+    .lista-diferenciales,
+    .imagen-diferenciales {
+        width: 100%;
+    }
+
+    .productos {
+        position: relative;
+        width: auto;
+        margin: 0 auto;
+    }
+
+    .productos li {
+        display: block;
+        text-align: center;
+        width: auto;
+        margin: 10%;
+        padding: 30px 20px;
+        box-sizing: border-box;
+        border: 2px solid #000000;
+        border-radius: 10px;
+    }
+
+    .productos img {
+        width: 90%;
+        margin: 0 auto;
+    }
+    .centrar_p {
+        display: block;
+        padding: 2px 5px;
+        max-width: 100%;
+        position: relative;
+        margin: 0 auto;
+        text-align: center;
+    }
+    form label, form legend {
+        display: block;
+        font-size: 20px;
+        margin: 0 auto 10px;
+        text-align: center;
+    }
+    .input-padron {
+        display: block;
+        margin: 0 auto 5px;
+        padding: 10px 25px;
+        width: 99%;
+    }
+
+    .enviar {
+        position: relative;
+        margin: 0 auto;
+        width: 60%;
+        padding: 15px 0;
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background: rgb(0, 0, 0);
+        border: none;
+        border-radius: 5px;
+        transition: 1s all;
+        cursor: pointer;
+    }
+
+    .tabla {
+        width: 70%; 
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+    }
+
+    .formulario2 {
+        max-width: 400px; 
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #e7e4e4; 
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.1); 
+        font-weight: 300;
+    }
+
+    .video {
+        display: block;
+        margin-top: 8em;
+        margin-bottom: 4em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%; 
+        height: 13em;
+        border-radius: 20px;
+        box-shadow: 10px 10px 40px 1px #ac9e9e;
+    }
+
+    .imagen-diferenciales {
+        display: block; 
+        margin: 0 auto;
+        width: 90%;
+        transition: 400ms;
+        box-shadow: 10px 10px 30px 15px #423535;
+    }
+}
+
