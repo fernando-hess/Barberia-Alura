@@ -286,7 +286,7 @@ td {
 
 .utensilios {
     max-width: 100%;
-    width: 95%;
+    width: 50%;
     float: left;
     margin-right: 60px;
     transition: 400ms;
@@ -607,6 +607,11 @@ td {
         width: 90%;
         transition: 400ms;
         box-shadow: 10px 10px 30px 15px #423535;
+    }
+
+    .utensilios {
+        width: 50%;
+        
     }
 }
 
