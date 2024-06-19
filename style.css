@@ -370,6 +370,11 @@ td {
     box-shadow: 10px 10px 40px 9px #ac9e9e;
 }
 
+.video__container {
+    display: flex;
+    justify-content: center;
+}
+
 
 
 
